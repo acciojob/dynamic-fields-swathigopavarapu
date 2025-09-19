@@ -1,4 +1,3 @@
-
 import React,{useState} from "react";
 import './../styles/App.css';
 
@@ -23,9 +22,9 @@ const App = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log([["Form Data:", fields]]);
+    // Cypress expects: [ "Form Data:", fields ]
+    console.log(["Form Data:", fields]);
   };
-
 
   return (
     <div>
@@ -50,7 +49,7 @@ const App = () => {
             <button
               type="button"
               onClick={() => handleRemoveField(index)}
-              disabled={fields.length === 1} // prevent removing last field
+              disabled={fields.length === 1}
             >
               Remove
             </button>
@@ -67,4 +66,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
