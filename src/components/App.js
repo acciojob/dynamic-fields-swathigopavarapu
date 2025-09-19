@@ -22,8 +22,7 @@ const App = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Cypress expects: [ "Form Data:", fields ]
-    console.log(["Form Data:", fields]);
+    console.log([fields]);
   };
 
   return (
