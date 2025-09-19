@@ -22,7 +22,7 @@ const App = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log([fields]);
+    console.log(fields);
   };
 
   return (
