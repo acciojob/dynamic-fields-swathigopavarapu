@@ -23,7 +23,7 @@ const App = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form Data:", fields);
+    console.log(["Form Data:", fields]);
   };
 
 
@@ -58,7 +58,7 @@ const App = () => {
         ))}
 
         <button type="button" onClick={handleAddField}>
-          Add More
+          Add More..
         </button>
 
         <button type="submit">Submit</button>
