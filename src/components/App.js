@@ -27,7 +27,6 @@ const App = () => {
 
   return (
     <div>
-        {/* Do not remove the main div */}
         <form onSubmit={handleSubmit}>
         {fields.map((field, index) => (
           <div key={index} style={{ marginBottom: "10px" }}>
